@@ -1,7 +1,6 @@
 import { extractText, getDocumentProxy } from "unpdf";
 import { parseQuestions } from "@/lib/questions/parse";
 
-export const runtime = "nodejs";
 export const maxDuration = 30;
 
 const MAX_BYTES = 15 * 1024 * 1024;
