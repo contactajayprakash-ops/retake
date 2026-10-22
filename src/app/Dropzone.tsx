@@ -137,13 +137,16 @@ export function Dropzone() {
                   Paste text instead
                 </Button>
               </div>
-              <button
-                type="button"
-                className="text-sm font-semibold underline underline-offset-4"
-                onClick={() => finish(SAMPLE_QUESTIONS, SAMPLE_TITLE)}
-              >
-                Or try the 12-question sample
-              </button>
+              <p className="text-sm">
+                <button type="button" className="font-semibold underline underline-offset-4" onClick={() => finish(SAMPLE_QUESTIONS, SAMPLE_TITLE)}>
+                  Try the 12-question sample
+                </button>
+                <span className="text-graphite"> or </span>
+                <a href="/AP-Bio-Unit-2-Practice-Test.pdf" download className="font-semibold underline underline-offset-4">
+                  download it as a PDF
+                </a>
+                <span className="text-graphite"> to upload yourself</span>
+              </p>
             </>
           )}
         </div>
